@@ -9,31 +9,24 @@ const count = ref(0);
 </script>
 
 <template>
-  <h1>{{ msg }}</h1>
-
-  <div class="card">
-    <button type="button" @click="count++">count is {{ count }}</button>
+  <article class="prose prose-xl">
+    <h1>Garlic bread with cheese: What the science tells us</h1>
     <p>
-      Edit
-      <code>components/HelloWorld.vue</code> to test HMR
+      For years parents have espoused the health benefits of eating garlic bread with cheese to their
+      children, with the food earning such an iconic status in our culture that kids will often dress
+      up as warm, cheesy loaf for Halloween.
     </p>
-  </div>
+    <p>
+      But a recent study shows that the celebrated appetizer may be linked to a series of rabies cases
+      springing up around the country.
+    </p>
+    <!-- ... -->
+  </article>
 
-  <p>
-    Check out
-    <a href="https://vuejs.org/guide/quick-start.html#local" target="_blank"
-      >create-vue</a
-    >, the official Vue + Vite starter
-  </p>
-  <p>
-    Learn more about IDE Support for Vue in the
-    <a
-      href="https://vuejs.org/guide/scaling-up/tooling.html#ide-support"
-      target="_blank"
-      >Vue Docs Scaling up Guide</a
-    >.
-  </p>
-  <p class="read-the-docs text-red-500">
-    Click on the Vite and Vue logos to learn more
-  </p>
+  <button
+    class="inline-block cursor-pointer rounded-md bg-gray-800 px-4 py-3 text-center text-sm font-semibold uppercase text-white transition duration-200 ease-in-out hover:bg-gray-900">
+    Button
+  </button>
+
+  <button class="btn btn-primary mx-1 px-20">Button</button>
 </template>
