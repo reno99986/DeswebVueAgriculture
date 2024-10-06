@@ -1,11 +1,11 @@
 <script setup>
-import { ref } from 'vue'
+import { ref } from "vue";
 
 defineProps({
   msg: String,
-})
+});
 
-const count = ref(0)
+const count = ref(0);
 </script>
 
 <template>
@@ -33,11 +33,7 @@ const count = ref(0)
       >Vue Docs Scaling up Guide</a
     >.
   </p>
-  <p class="read-the-docs">Click on the Vite and Vue logos to learn more</p>
+  <p class="read-the-docs text-red-500">
+    Click on the Vite and Vue logos to learn more
+  </p>
 </template>
-
-<style scoped>
-.read-the-docs {
-  color: #888;
-}
-</style>
