@@ -28,5 +28,5 @@ const count = ref(0);
     Button
   </button>
 
-  <button class="btn btn-primary mx-1 px-20">Button</button>
+  <button class="btn btn-secondary mx-1 px-20">Button</button>
 </template>

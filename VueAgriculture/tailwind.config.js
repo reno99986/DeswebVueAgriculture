@@ -13,7 +13,6 @@ export default {
   ],
 
   daisyui: {
-    themes: ["lemonade"],
+    themes: ["emerald"],
   },
 }
-
