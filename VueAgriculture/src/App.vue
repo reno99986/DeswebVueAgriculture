@@ -1,11 +1,11 @@
 <script setup>
-import HelloWorld from "./components/HelloWorld.vue";
-import Navbar from "./components/Navbar.vue";
+import Navbar from './components/Navbar.vue';
+import landingpage from './pages/landingpage/landingpage.vue';
 </script>
 
 <template>
-  <Navbar />
-  <HelloWorld />
+<Navbar/>
+<landingpage/>
 </template>
 
 <style scoped></style>
