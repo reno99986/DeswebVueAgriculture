@@ -8,10 +8,10 @@ export default {
     extend: {},
     screens: {
       'xs': {'min': '320px', 'max': '640px'},
-      // => @media (min-width: 640px and max-width: 767px) { ... }
+      // => @media (min-width: 320px and max-width: 640px) { ... }
 
       'sm': {'min': '641px', 'max': '767px'},
-      // => @media (min-width: 640px and max-width: 767px) { ... }
+      // => @media (min-width: 641px and max-width: 767px) { ... }
 
       'md': {'min': '768px', 'max': '1023px'},
       // => @media (min-width: 768px and max-width: 1023px) { ... }
