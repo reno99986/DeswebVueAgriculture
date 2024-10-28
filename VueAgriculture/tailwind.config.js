@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+      },
+    },
     screens: {
       'xs': {'min': '320px', 'max': '640px'},
       // => @media (min-width: 320px and max-width: 640px) { ... }
