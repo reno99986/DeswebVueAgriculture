@@ -2,7 +2,7 @@
 
 <template>
   <div
-    class="flex flex-row place-content-between px-16 lg:px-12 md:px-12 sm:px-12 xs:px-4 py-4 gap-20 lg:gap-10 bg-base-100 border-b-2 border-base-200">
+    class="flex flex-row place-content-between 2xl:px-16 xl:px-16 px-12 xs:px-4 py-4 gap-20 lg:gap-10 bg-base-100 border-b-2 border-base-200">
     <div class="flex flex-row gap-20 lg:gap-10 w-fit h-fit place-self-center">
       <div class="inline-flex flex-row gap-1">
         <img alt="Wonderful Tarakan" class="" src="/src/assets/logo.svg" />
