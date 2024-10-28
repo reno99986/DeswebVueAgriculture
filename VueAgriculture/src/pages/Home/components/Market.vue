@@ -32,14 +32,17 @@
       </div>
     </div>
     <div class="flex flex-col 2xl:justify-center 2xl:gap-6 2xl:w-full xl:gap-6 xl:w-full lg:gap-6 lg:w-full gap-4">
-      <h1 class="text-secondary font-bold text-2xl 2xl:text-4xl 2xl:max-w-[640px] xl:text-4xl xl:max-w-[640px] lg:text-4xl lg:max-w-[640px]">
+      <h1
+        class="text-secondary font-bold text-2xl 2xl:text-4xl 2xl:max-w-[640px] xl:text-4xl xl:max-w-[640px] lg:text-4xl lg:max-w-[640px]">
         Pesan dari Nelayan-nelayan hebat disini!
       </h1>
       <p class="text-base-content prose-sm text-justify 2xl:text-xl 2xl:max-w-[576px]">
-        Nikmati hasil laut segar dan terjangkau langsung dari tangan nelayan. Cari, temukan, dan hubungi hasil tangkapan
-        laut favoritmu dari lokasi terdekat. Dapatkan harga terbaik tanpa harus melalui perantara!
+        Mereka menawarkan hasil laut berkualitas tinggi yang baru saja ditangkap, bebas bahan pengawet dan langsung
+        diproses agar tetap segar saat sampai di tangan Anda. Dengan membeli dari mereka, Anda tidak hanya mendapatkan
+        produk terbaik, tetapi juga mendukung para nelayan lokal yang bekerja keras untuk menyediakan hasil laut yang
+        sehat dan berkualitas.
       </p>
-      <button class="btn btn-secondary 2xl:w-1/3 xs:w-1/2 w-1/3 p-0">Hasil Tangkapan</button>
+      <button class="btn btn-secondary 2xl:w-1/3 xs:w-1/2 w-1/3 p-0 2xl:prose-lg">Hasil Tangkapan</button>
     </div>
   </div>
 </template>

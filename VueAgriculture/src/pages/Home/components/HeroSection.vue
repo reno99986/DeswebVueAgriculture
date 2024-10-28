@@ -8,10 +8,10 @@
       <p class="text-2xl 2xl:text-4xl xl:text-4xl lg:text-3xl text-secondary font-bold">
         Membeli hasil laut segar kini lebih mudah, langsung dari tangan pertama!
       </p>
-      <p class="prose-base xs:prose-sm xs:text-justify lg:prose-lg">
+      <p class="prose-lg xs:prose-sm xs:text-justify lg:prose-lg 2xl:prose-xl">
         Nikmati hasil laut segar dan terjangkau langsung dari tangan nelayan. Cari, temukan, dan hubungi hasil tangkapan laut favoritmu dari lokasi terdekat. Dapatkan harga terbaik tanpa harus melalui perantara!
       </p>
-      <button class="btn btn-secondary w-1/3 xs:w-3/5 md:w-1/2 p-0">Jelajahi Sekarang</button>
+      <button class="btn btn-secondary w-1/3 xs:w-3/5 md:w-1/2 p-0 2xl:prose-lg">Jelajahi Sekarang</button>
     </div>
   </div>
 </template>

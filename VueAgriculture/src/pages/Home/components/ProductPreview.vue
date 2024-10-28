@@ -6,10 +6,10 @@
     <h1 class="font-bold text-2xl 2xl:text-4xl xl:text-4xl lg:text-4xl text-center text-secondary">
       Cari kebutuhan dapur kini lebih mudah
     </h1>
-    <p class="xs:text-sm 2xl:text-lg xl:text-lg lg:text-lg text-center">
+    <p class="xs:text-sm 2xl:prose-xl xl:text-lg lg:text-lg text-center">
       Banyaknya variasi dari hasil tangkapan nelayan, membuat banyaknya pilihan untuk dimasakan
     </p>
-    <div class="carousel rounded-box xs:h-[200px] xs:w-full 2xl:h-[800px]">
+    <div class="carousel rounded-box xs:h-[200px] xs:w-full 2xl:h-[800px] mb-2">
       <div class="carousel-item w-full">
         <img
           src="https://images.unsplash.com/photo-1534948216015-843149f72be3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
