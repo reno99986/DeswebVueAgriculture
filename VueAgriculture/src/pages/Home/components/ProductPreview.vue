@@ -3,10 +3,10 @@
 
 <template>
   <div class="flex flex-col gap-6 bg-neutral-content border border-b-2 border-base-200 xs:px-4 px-12 xl:px-16 2xl:px-16 py-4">
-    <h1 class="font-bold text-2xl 2xl:text-4xl xl:text-4xl lg:text-4xl text-center text-secondary">
+    <h1 class="font-bold text-2xl 2xl:text-4xl xl:text-3xl lg:text-3xl text-center text-secondary">
       Cari kebutuhan dapur kini lebih mudah
     </h1>
-    <p class="xs:text-sm 2xl:prose-xl xl:text-lg lg:text-lg text-center">
+    <p class="xs:text-sm  md:prose-base 2xl:prose-xl xl:text-lg lg:text-lg text-center">
       Banyaknya variasi dari hasil tangkapan nelayan, membuat banyaknya pilihan untuk dimasakan
     </p>
     <div class="carousel rounded-box xs:h-[200px] xs:w-full 2xl:h-[800px] mb-2">

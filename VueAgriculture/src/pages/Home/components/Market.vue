@@ -4,7 +4,7 @@
 
 <template>
   <div
-    class="flex flex-col 2xl:flex-row-reverse xl:flex-row-reverse lg:flex-row-reverse gap-4 xs:px-4 px-12 py-8 border border-b-2 border-base-200 2xl:px-16 xl:px-16 2xl:gap-20 xl:gap-20 lg:gap-20 items-center lg:h-[432px] xl:h-[567px]">
+    class="flex flex-col 2xl:flex-row-reverse xl:flex-row-reverse lg:flex-row-reverse gap-4 xs:px-4 px-12 py-8 border border-b-2 border-base-200 2xl:px-16 xl:px-16 2xl:gap-20 xl:gap-20 lg:gap-20 items-center xl:h-[567px]">
     <div class="flex flex-col gap-4 w-fit h-fit ">
       <div class="flex flex-row gap-4 w-full">
         <div>
@@ -36,7 +36,7 @@
         class="text-secondary font-bold text-2xl 2xl:text-4xl 2xl:max-w-[640px] xl:text-4xl xl:max-w-[640px] lg:text-4xl lg:max-w-[640px]">
         Pesan dari Nelayan-nelayan hebat disini!
       </h1>
-      <p class="text-base-content prose-sm text-justify 2xl:text-xl 2xl:max-w-[576px]">
+      <p class="text-base-content xs:prose-sm md:prose-base lg:text-lg  text-justify 2xl:text-xl 2xl:max-w-[576px] xl:prose-lg">
         Mereka menawarkan hasil laut berkualitas tinggi yang baru saja ditangkap, bebas bahan pengawet dan langsung
         diproses agar tetap segar saat sampai di tangan Anda. Dengan membeli dari mereka, Anda tidak hanya mendapatkan
         produk terbaik, tetapi juga mendukung para nelayan lokal yang bekerja keras untuk menyediakan hasil laut yang
