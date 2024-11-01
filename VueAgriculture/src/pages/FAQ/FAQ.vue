@@ -1,10 +1,11 @@
-<script lang="js">
+<script setup>
 import Navbar from '../../components/Navbar.vue';
-import Component1 from './components/component1.vue';
-
+import HeroQuestion from './components/HeroQuestion.vue';
+import Question from './components/Question.vue';
 </script>
 
 <template>
-  <Navbar/>
-  <Component1/>
+  <HeroQuestion />
+  <Question />
+
 </template>
