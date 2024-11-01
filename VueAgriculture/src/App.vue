@@ -1,11 +1,13 @@
 <script setup>
 import Navbar from './components/Navbar.vue';
-import landingpage from './pages/Home/LandingPage.vue';
+import LandingPage from './pages/Home/LandingPage.vue';
+import Market from './pages/Market/Market.vue';
 </script>
 
 <template>
-<Navbar/>
-<landingpage/>
+<Navbar />
+<LandingPage />
+<Market />
 </template>
 
 <style scoped></style>
