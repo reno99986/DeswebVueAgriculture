@@ -1,10 +1,13 @@
-<script lang="js">
-import Navbar from '../../components/Navbar.vue';
-import Component1 from './components/component1.vue';
-
+<script setup>
+import Navbar from "../../components/Navbar.vue";
+import Hero from "./components/Hero.vue";
 </script>
 
 <template>
-  <Navbar/>
-  <Component1/>
+  <Hero />
+  <footer class="footer footer-center bg-base-300 text-base-content p-4">
+    <aside>
+      <p>Copyright © 2024 - All right reserved by Wonderful Tarakan</p>
+    </aside>
+  </footer>
 </template>
