@@ -2,7 +2,7 @@
 
 <template>
   <main
-    class="flex xs:flex-col-reverse sm:flex-col-reverse flex-row-reverse gap-4 2xl:gap-0 xl:gap-8 2xl:px-16 xl:px-16 px-12 xs:px-4 py-12 bg-neutral-content place-content-between border border-b-2 border-base-200"
+    class="flex xs:flex-col-reverse sm:flex-col-reverse flex-row-reverse gap-4 2xl:gap-20 xl:gap-8 2xl:px-16 xl:px-16 px-12 xs:px-4 py-12 bg-neutral-content place-content-between border border-b-2 border-base-200"
   >
     <div
       class="flex flex-col justify-center 2xl:gap-4 gap-4 2xl:w-[640px] text-left"
