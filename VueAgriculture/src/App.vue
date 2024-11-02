@@ -7,7 +7,6 @@ import AboutUs from "./pages/About Us/AboutUs.vue";
 <template>
   <Navbar />
   <AboutUs />
-  <landingpage />
 </template>
 
 <style scoped></style>
