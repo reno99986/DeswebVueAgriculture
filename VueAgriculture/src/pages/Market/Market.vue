@@ -1,10 +1,10 @@
 <script setup>
-import MarketItem from '../market/components/MarketItem.vue';
+import MarketItem from './components/MarketItem.vue';
 import { ref, computed } from 'vue';
 
 const categories = [
-  'Semua', 'Ikan', 'Udang', 'Kepiting', 'Rumput Laut', 
-  'Kategori 1', 'Kategori 2', 'Kategori 3', 'Kategori 4', 
+  'Semua', 'Ikan', 'Udang', 'Kepiting', 'Rumput Laut',
+  'Kategori 1', 'Kategori 2', 'Kategori 3', 'Kategori 4',
   'Kategori 5', 'Kategori 6', 'Kategori 7', 'Kategori 8', 'Kategori 9'
 ];
 const selectedCategory = ref('Semua');
@@ -40,7 +40,8 @@ function filterCategory(category) {
   <div class="text-center bg-[#377CFB] text-white py-10 px-4">
     <h1 class="text-4xl font-bold">Hasil Tangkapan</h1>
     <p class="mt-2 max-w-2xl mx-auto">
-      Rasakan Kesegaran Sejati dari Laut! Dapatkan Hasil Laut Berkualitas Tinggi dengan Harga Terjangkau, Langsung dari Nelayan Lokal untuk Anda. Pilih, Pesan, dan Nikmati Hasil Tangkapan Segar yang Dijamin Lebih Nikmat!
+      Rasakan Kesegaran Sejati dari Laut! Dapatkan Hasil Laut Berkualitas Tinggi dengan Harga Terjangkau, Langsung dari
+      Nelayan Lokal untuk Anda. Pilih, Pesan, dan Nikmati Hasil Tangkapan Segar yang Dijamin Lebih Nikmat!
     </p>
   </div>
 
@@ -49,10 +50,7 @@ function filterCategory(category) {
     <!-- Filter Buttons with Visible Scrollbar -->
     <div class="relative mt-8 px-4">
       <div class="flex space-x-4 overflow-x-auto px-4 categories-container">
-        <button 
-          v-for="category in categories" 
-          :key="category" 
-          @click="filterCategory(category)"
+        <button v-for="category in categories" :key="category" @click="filterCategory(category)"
           :class="['py-1 px-6 rounded-full whitespace-nowrap', selectedCategory.value === category ? 'bg-[#377CFB] text-white' : 'bg-gray-200']">
           {{ category }}
         </button>
@@ -61,11 +59,7 @@ function filterCategory(category) {
 
     <!-- Product Grid -->
     <div class="product-grid mt-8">
-      <MarketItem
-        v-for="(product, index) in filteredProducts"
-        :key="index"
-        :product="product"
-      />
+      <MarketItem v-for="(product, index) in filteredProducts" :key="index" :product="product" />
     </div>
   </div>
   <footer class="footer footer-center bg-base-300 text-base-content p-4">
@@ -73,12 +67,13 @@ function filterCategory(category) {
       <p>Copyright © 2024 - All right reserved by Wonderful Tarakan</p>
     </aside>
   </footer>
-  <Navbar/>
+  <Navbar />
 </template>
 
 <style scoped>
 .container {
-  max-width: 1200px; /* Atur lebar container */
+  max-width: 1200px;
+  /* Atur lebar container */
 }
 
 .product-grid {
@@ -96,23 +91,32 @@ button {
 
 /* Styling untuk scrollbar yang terlihat */
 .categories-container {
-  scrollbar-color: #377CFB #e0e0e0; /* Warna thumb dan track scrollbar */
-  scrollbar-width: thin; /* Untuk Firefox */
-  overflow-y: hidden; /* Hanya scrollbar horizontal */
-  padding-bottom: 10px; /* Spasi untuk scrollbar */
+  scrollbar-color: #377CFB #e0e0e0;
+  /* Warna thumb dan track scrollbar */
+  scrollbar-width: thin;
+  /* Untuk Firefox */
+  overflow-y: hidden;
+  /* Hanya scrollbar horizontal */
+  padding-bottom: 10px;
+  /* Spasi untuk scrollbar */
 }
 
 /* Scrollbar Styling for Chrome, Safari, and Edge */
 .categories-container::-webkit-scrollbar {
   height: 8px;
 }
+
 .categories-container::-webkit-scrollbar-track {
-  background: #e0e0e0; /* Warna background track */
+  background: #e0e0e0;
+  /* Warna background track */
   border-radius: 8px;
 }
+
 .categories-container::-webkit-scrollbar-thumb {
-  background-color: #377CFB; /* Warna thumb */
+  background-color: #377CFB;
+  /* Warna thumb */
   border-radius: 8px;
-  border: 2px solid #e0e0e0; /* Margin sekitar thumb */
+  border: 2px solid #e0e0e0;
+  /* Margin sekitar thumb */
 }
 </style>
