@@ -1,5 +1,5 @@
 <script setup>
-import TestimonyCard from "./TestimonyCard.vue";
+import TestimonyCard from "/src/components/UI/TestimonyCard.vue";
 </script>
 
 <template>
