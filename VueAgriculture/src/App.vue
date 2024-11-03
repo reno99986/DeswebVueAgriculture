@@ -1,11 +1,15 @@
 <script setup>
 import Navbar from './components/Navbar.vue';
-import landingpage from './pages/Home/LandingPage.vue';
+import Footer from './components/UI/Footer.vue';
 </script>
 
 <template>
-<Navbar/>
-<landingpage/>
+<Header>
+  <Navbar />
+</Header>
+<RouterView />
+<Footer />
 </template>
 
-<style scoped></style>
+<style scoped>
+</style>

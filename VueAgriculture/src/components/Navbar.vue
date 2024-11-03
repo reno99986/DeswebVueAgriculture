@@ -1,30 +1,49 @@
-<script setup></script>
+<script setup>
+import { RouterLink } from 'vue-router';
+</script>
 
 <template>
-  <div
+  <nav
     class="flex flex-row place-content-between 2xl:px-16 xl:px-16 px-12 xs:px-4 py-4 gap-20 lg:gap-10 bg-base-100 border-b-2 border-base-200">
     <div class="flex flex-row gap-20 lg:gap-10 w-fit h-fit place-self-center">
-      <div class="inline-flex flex-row gap-1">
-        <img alt="Wonderful Tarakan" class="" src="/src/assets/logo.svg" />
-        <p class="basis-0 prose-sm text-secondary content-center">
-          Wonderful Tarakan
-        </p>
-      </div>
-      <button class="btn btn-ghost text-base lg:text-sm text-base-content font-normal p-0 md:hidden sm:hidden xs:hidden">
-        Home
-      </button>
-      <button class="btn btn-ghost text-base lg:text-sm text-base-content font-normal p-0 md:hidden sm:hidden xs:hidden">
-        Pengenalan
-      </button>
-      <button class="btn btn-ghost text-base lg:text-sm text-base-content font-normal p-0 md:hidden sm:hidden xs:hidden">
-        Hasil Tangkapan
-      </button>
-      <button class="btn btn-ghost text-base lg:text-sm text-base-content font-normal p-0 md:hidden sm:hidden xs:hidden">
-        Tanya Jawab
-      </button>
-      <button class="btn btn-ghost text-base lg:text-sm text-base-content font-normal p-0 md:hidden sm:hidden xs:hidden">
-        Kontak Kami
-      </button>
+      <RouterLink to="/">
+        <div class="inline-flex flex-row gap-1">
+          <img alt="Wonderful Tarakan" class="" src="/src/assets/logo.svg" />
+          <p class="basis-0 prose-sm text-secondary content-center">
+            Wonderful Tarakan
+          </p>
+        </div>
+      </RouterLink>
+      <RouterLink to="/">
+        <button
+          class="btn btn-ghost text-base lg:text-sm text-base-content font-normal p-0 md:hidden sm:hidden xs:hidden">
+          Home
+        </button>
+      </RouterLink>
+      <RouterLink to="/about">
+        <button
+          class="btn btn-ghost text-base lg:text-sm text-base-content font-normal p-0 md:hidden sm:hidden xs:hidden">
+          Pengenalan
+        </button>
+      </RouterLink>
+      <RouterLink to="/market">
+        <button
+          class="btn btn-ghost text-base lg:text-sm text-base-content font-normal p-0 md:hidden sm:hidden xs:hidden">
+          Hasil Tangkapan
+        </button>
+      </RouterLink>
+      <RouterLink to="/FAQ">
+        <button
+          class="btn btn-ghost text-base lg:text-sm text-base-content font-normal p-0 md:hidden sm:hidden xs:hidden">
+          Tanya Jawab
+        </button>
+      </RouterLink>
+      <RouterLink to="/services">
+        <button
+          class="btn btn-ghost text-base lg:text-sm text-base-content font-normal p-0 md:hidden sm:hidden xs:hidden">
+          Layanan Kami
+        </button>
+      </RouterLink>
     </div>
 
     <div class="dropdown dropdown-end md:hidden sm:hidden xs:hidden">
@@ -51,7 +70,7 @@
       </ul>
     </div>
     <div class="2xl:hidden xl:hidden lg:hidden md:flex sm:flex xs:flex">
-      <img src="/src/assets/menu.svg" alt="" class="w-10"/>
+      <img src="/src/assets/menu.svg" alt="" class="w-10" />
     </div>
-  </div>
+  </nav>
 </template>
