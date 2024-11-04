@@ -1,4 +1,6 @@
 <script setup>
+import { RouterLink } from 'vue-router';
+
 </script>
 
 <template>
@@ -11,7 +13,9 @@
       <p class="prose-lg xs:prose-sm sm:prose-base md:prose-base xs:text-justify md:text-justify xl:text-justify 2xl:prose-xl">
         Nikmati hasil laut segar dan terjangkau langsung dari tangan nelayan. Cari, temukan, dan hubungi hasil tangkapan laut favoritmu dari lokasi terdekat. Dapatkan harga terbaik tanpa harus melalui perantara!
       </p>
-      <button class="btn btn-secondary w-1/3 xs:w-3/5 md:w-1/2 p-0 2xl:prose-lg">Jelajahi Sekarang</button>
+      <RouterLink to="/market">
+        <button class="btn btn-secondary w-1/3 xs:w-3/5 md:w-1/2 p-0 2xl:prose-lg">Hasil Tangkapan</button>
+      </RouterLink>
     </div>
   </main>
 </template>

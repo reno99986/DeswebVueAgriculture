@@ -1,4 +1,6 @@
 <script setup>
+import { RouterLink } from 'vue-router';
+
 
 </script>
 
@@ -36,13 +38,16 @@
         class="text-secondary font-bold text-2xl 2xl:text-4xl 2xl:max-w-[640px] xl:text-4xl xl:max-w-[640px] lg:text-4xl lg:max-w-[640px]">
         Pesan dari Nelayan-nelayan hebat disini!
       </h1>
-      <p class="text-base-content xs:prose-sm md:prose-base lg:text-lg  text-justify 2xl:text-xl 2xl:max-w-[576px] xl:prose-lg">
+      <p
+        class="text-base-content xs:prose-sm md:prose-base lg:text-lg  text-justify 2xl:text-xl 2xl:max-w-[576px] xl:prose-lg">
         Mereka menawarkan hasil laut berkualitas tinggi yang baru saja ditangkap, bebas bahan pengawet dan langsung
         diproses agar tetap segar saat sampai di tangan Anda. Dengan membeli dari mereka, Anda tidak hanya mendapatkan
         produk terbaik, tetapi juga mendukung para nelayan lokal yang bekerja keras untuk menyediakan hasil laut yang
         sehat dan berkualitas.
       </p>
-      <button class="btn btn-secondary 2xl:w-1/3 xs:w-1/2 w-1/3 p-0 2xl:prose-lg">Hasil Tangkapan</button>
+      <RouterLink to="/about">
+        <button class="btn btn-secondary 2xl:w-1/3 xs:w-1/2 w-1/3 p-0 2xl:prose-lg">Pelajari Sekarang</button>
+      </RouterLink>
     </div>
   </div>
 </template>
