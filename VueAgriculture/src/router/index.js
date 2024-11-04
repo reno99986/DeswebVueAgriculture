@@ -25,7 +25,7 @@ const router = createRouter({
     {
       path: "/FAQ",
       name: "Tanya Jawab",
-      // component :
+      component: () => import("../views/FAQ.vue"),
     },
     {
       path: "/services",
