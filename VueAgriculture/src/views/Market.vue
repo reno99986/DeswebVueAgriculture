@@ -1,5 +1,5 @@
 <script setup>
-import MarketItem from './components/MarketItem.vue';
+import MarketItem from '../components/pages/Market/MarketItem.vue';
 import { ref, computed } from 'vue';
 
 const categories = [
@@ -62,12 +62,6 @@ function filterCategory(category) {
       <MarketItem v-for="(product, index) in filteredProducts" :key="index" :product="product" />
     </div>
   </div>
-  <footer class="footer footer-center bg-base-300 text-base-content p-4">
-    <aside>
-      <p>Copyright © 2024 - All right reserved by Wonderful Tarakan</p>
-    </aside>
-  </footer>
-  <Navbar />
 </template>
 
 <style scoped>
