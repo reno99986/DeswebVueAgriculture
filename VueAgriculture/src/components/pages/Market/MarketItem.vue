@@ -1,23 +1,29 @@
 <script setup>
-import { ref, computed } from 'vue';
+import { ref } from 'vue';
+import ProductModal from './ProductModal.vue';
 
 const props = defineProps({
   product: Object
 });
+
+const showModal = ref(false);
+
+function openModal() {
+  showModal.value = true;
+}
 </script>
 
 <template>
   <div class="product-item">
-    <!-- Tambahkan link pada gambar untuk menuju ke WhatsApp -->
-    <a :href="product.waLink" target="_blank">
-      <img :src="product.imageSrc" alt="Gambar produk" />
+    <a @click="openModal" href="javascript:void(0)">
+      <img :src="product.image" alt="Gambar produk" />
     </a>
     <div class="product-details">
-      <!-- Tampilkan kategori tanpa fungsi klik -->
       <p class="category">{{ product.category }}</p>
-      <!-- Tampilkan nama produk sebagai deskripsi yang bisa diklik -->
-      <a :href="product.waLink" target="_blank" class="product-name">{{ product.name }}</a>
+      <a @click="openModal" href="javascript:void(0)" class="product-name">{{ product.name }}</a>
     </div>
+
+    <ProductModal v-if="showModal" :product="product" @close="showModal = false" />
   </div>
 </template>
 
