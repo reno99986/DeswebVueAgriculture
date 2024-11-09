@@ -2,17 +2,27 @@
 </script>
 
 <template>
-  <main class="flex text-center  xs:flex-col sm:flex-col flex-row-reverse gap-4 2xl:gap-20 xl:gap-20 2xl:px-16 xl:px-16 px-12 xs:px-4 py-4 bg-neutral-content place-content-between border border-b-2 border-base-200">
-    <!-- <img src="/src/assets/image/michael-yero-8S2RGfb9GXc-unsplash.jpg" alt="" class="rounded-xl w-full h-full md:w-80 md:h-80 lg:w-96 lg:h-96 xl:w-[540px] xl:h-96 2xl:w-1/2 2xl:h-[640px] object-cover object-center"> -->
-    <div class="flex items-center  flex-col 2xl:gap-6 gap-4 place-content-center ">
-      <p class=" text-2xl 2xl:text-4xl xl:text-3xl lg:text-3xl text-secondary font-bold">
-        Ada Pertanyaan? Cek Pertanyaan yang Sering Ditanyakan Atau Tanyakan Langsung
+  <main
+    class="flex flex-col-reverse text-center sm:flex-row-reverse gap-4 px-4 py-4 bg-neutral-content place-content-between border border-b-2 border-base-200"
+  >
+    <div class="flex items-center flex-col gap-4 place-content-center sm:gap-6 xl:gap-8 max-w-full sm:max-w-[75%] lg:max-w-[75%] xl:max-w-[75%] mx-auto">
+      <p
+        class="text-xl sm:text-2xl lg:text-2xl xl:text-3xl 2xl:text-3xl text-secondary font-bold"
+      >
+        Ada Pertanyaan? Cek Pertanyaan yang Sering Ditanyakan Atau Tanyakan
+        Langsung
       </p>
-      <p class="prose-lg xs:prose-sm sm:prose-base md:prose-base text-center 2xl:prose-xl">
-        Temukan jawaban dari pertanyaan-pertanyaan yang paling sering diajukan oleh pengunjung kami.
-        Klik pada setiap judul pertanyaan untuk menampilkan jawabannya. Jika tidak menemukan jawaban yang Anda cari, silakan hubungi kami.
+      <p
+        class="text-sm xs:text-base sm:text-lg md:text-base lg:text-lg xl:text-xl 2xl:text-2xl prose text-center"
+      >
+        Temukan jawaban dari pertanyaan-pertanyaan yang paling sering
+        diajukan oleh pengunjung kami. Klik pada setiap judul pertanyaan
+        untuk menampilkan jawabannya. Jika tidak menemukan jawaban yang Anda
+        cari, silakan hubungi kami.
       </p>
-      <button class="btn btn-secondary w-1/3 xs:w-3/5 md:w-1/2 p-0 2xl:prose-lg">Hubungi Kami</button>
+      <button class="btn btn-secondary w-full xs:w-3/5 sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5">
+        Hubungi Kami
+      </button>
     </div>
   </main>
 </template>
