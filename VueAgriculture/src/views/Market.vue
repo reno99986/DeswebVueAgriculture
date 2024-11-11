@@ -21,18 +21,6 @@ import KeranglautImage from '@/assets/image/klaut.jpg';
 import CumiImage from '@/assets/image/cumi.jpg';
 import SotongImage from '@/assets/image/sotong.jpg';
 
-// const showModal = ref(false);
-// const currentProduct = ref(null);
-
-// function openModal(product) {
-//   currentProduct.value = product;
-//   showModal.value = true;
-// }
-
-// function closeModal() {
-//   showModal.value = false;
-// }
-
 const categories = [
   'Semua', 'Ikan', 'Udang', 'Kepiting', 'Rumput Laut',
   'Kerang', 'Cumi-Cumi', 'Kategori 3', 'Kategori 4',
@@ -73,6 +61,7 @@ const filteredProducts = computed(() => {
 function filterCategory(category) {
   selectedCategory.value = category;
 }
+
 function openModal(product) {
   currentProduct.value = product;
   showModal.value = true;
@@ -88,12 +77,11 @@ function closeModal() {
   <div class="text-center bg-[#377CFB] text-white py-10 px-4">
     <h1 class="text-4xl font-bold">Hasil Tangkapan</h1>
     <p class="mt-2 max-w-2xl mx-auto">
-      Rasakan Kesegaran Sejati dari Laut! Dapatkan Hasil Laut Berkualitas Tinggi dengan Harga Terjangkau, Langsung dari
-      Nelayan Lokal untuk Anda. Pilih, Pesan, dan Nikmati Hasil Tangkapan Segar yang Dijamin Lebih Nikmat!
+      Rasakan Kesegaran Sejati dari Laut! Dapatkan Hasil Laut Berkualitas Tinggi dengan Harga Terjangkau.
     </p>
   </div>
 
-  
+  <!-- Categories Section -->
   <div class="container mx-auto px-4">
     <div class="relative mt-8 px-4">
       <div class="flex space-x-4 overflow-x-auto px-4 categories-container">
@@ -104,31 +92,19 @@ function closeModal() {
       </div>
     </div>
 
-   
-    <div class="product-grid mt-8">
-      <MarketItem v-for="(product, index) in filteredProducts" :key="index" :product="product" />
+    <!-- Product Grid Section -->
+    <div class="mt-8 grid xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5">
+      <MarketItem v-for="(product, index) in filteredProducts" :key="index" :product="product" @click="openModal(product)" />
     </div>
   </div>
- <ProductModal v-if="showModal" :product="currentProduct" @close="closeModal" />
-
+  
+  <!-- Product Modal -->
+  <ProductModal v-if="showModal" :product="currentProduct" @close="closeModal" />
 </template>
 
 <style scoped>
 .container {
   max-width: 1200px;
-
-}
-
-.product-grid {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-button {
-  font-size: 14px;
-  padding: 8px 12px;
 }
 
 .categories-container {
@@ -151,34 +127,5 @@ button {
   background-color: #377CFB;
   border-radius: 8px;
   border: 2px solid #e0e0e0;
-}
-
-/* Responsivitas dengan Media Queries */
-@media (max-width: 1200px) {
-  .product-grid {
-    gap: 15px;
-  }
-}
-
-@media (max-width: 768px) {
-  .product-grid {
-    grid-template-columns: repeat(3, 1fr); 
-  }
-
-  button {
-    font-size: 12px;
-    padding: 6px 10px;
-  }
-}
-
-@media (max-width: 480px) {
-  .product-grid {
-    grid-template-columns: repeat(2, 1fr); 
-  }
-
-  button {
-    font-size: 10px;
-    padding: 5px 8px;
-  }
 }
 </style>
