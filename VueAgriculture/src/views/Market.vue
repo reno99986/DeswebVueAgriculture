@@ -93,9 +93,8 @@ function closeModal() {
     </p>
   </div>
 
-  <!-- Main Container -->
+  
   <div class="container mx-auto px-4">
-    <!-- Filter Buttons with Visible Scrollbar -->
     <div class="relative mt-8 px-4">
       <div class="flex space-x-4 overflow-x-auto px-4 categories-container">
         <button v-for="category in categories" :key="category" @click="filterCategory(category)"
@@ -105,12 +104,11 @@ function closeModal() {
       </div>
     </div>
 
-    <!-- Product Grid -->
+   
     <div class="product-grid mt-8">
       <MarketItem v-for="(product, index) in filteredProducts" :key="index" :product="product" />
     </div>
   </div>
- <!-- Modal to show product details -->
  <ProductModal v-if="showModal" :product="currentProduct" @close="closeModal" />
 
 </template>
@@ -118,7 +116,7 @@ function closeModal() {
 <style scoped>
 .container {
   max-width: 1200px;
-  /* Atur lebar container */
+
 }
 
 .product-grid {
@@ -128,41 +126,31 @@ function closeModal() {
   justify-content: center;
 }
 
-/* Styling untuk membuat button kategori lebih pipih */
 button {
   font-size: 14px;
   padding: 8px 12px;
 }
 
-/* Styling untuk scrollbar yang terlihat */
 .categories-container {
   scrollbar-color: #377CFB #e0e0e0;
-  /* Warna thumb dan track scrollbar */
   scrollbar-width: thin;
-  /* Untuk Firefox */
   overflow-y: hidden;
-  /* Hanya scrollbar horizontal */
   padding-bottom: 10px;
-  /* Spasi untuk scrollbar */
 }
 
-/* Scrollbar Styling for Chrome, Safari, and Edge */
 .categories-container::-webkit-scrollbar {
   height: 8px;
 }
 
 .categories-container::-webkit-scrollbar-track {
   background: #e0e0e0;
-  /* Warna background track */
   border-radius: 8px;
 }
 
 .categories-container::-webkit-scrollbar-thumb {
   background-color: #377CFB;
-  /* Warna thumb */
   border-radius: 8px;
   border: 2px solid #e0e0e0;
-  /* Margin sekitar thumb */
 }
 
 /* Responsivitas dengan Media Queries */
@@ -174,7 +162,7 @@ button {
 
 @media (max-width: 768px) {
   .product-grid {
-    grid-template-columns: repeat(3, 1fr); /* 3 kolom */
+    grid-template-columns: repeat(3, 1fr); 
   }
 
   button {
@@ -185,7 +173,7 @@ button {
 
 @media (max-width: 480px) {
   .product-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 kolom */
+    grid-template-columns: repeat(2, 1fr); 
   }
 
   button {
