@@ -92,13 +92,11 @@ function closeModal() {
       </div>
     </div>
 
-    <!-- Product Grid Section -->
-    <div class="mt-8 grid xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5">
+    <div class="mt-8 grid xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-5 gap-5">
       <MarketItem v-for="(product, index) in filteredProducts" :key="index" :product="product" @click="openModal(product)" />
     </div>
   </div>
   
-  <!-- Product Modal -->
   <ProductModal v-if="showModal" :product="currentProduct" @close="closeModal" />
 </template>
 

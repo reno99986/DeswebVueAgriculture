@@ -13,18 +13,43 @@ function openModal() {
 }
 </script>
 
-<template>
-  <div class="product-item">
-    <a @click="openModal" href="javascript:void(0)">
-      <img :src="product.image" alt="Gambar produk" />
+<template>  
+  <div
+    class="product-item p-2 xs:p-3 sm:p-4 md:p-6 lg:p-8 xl:p-10 2xl:p-10"
+  >
+    <a @click="openModal" href="javascript:void(0)" class="block group">
+      <img
+        :src="product.image"
+        alt="Gambar produk"
+        class="w-full h-auto rounded-lg shadow-md transform group-hover:scale-105 transition duration-300"
+      />
     </a>
-    <div class="product-details">
-      <p class="category">{{ product.category }}</p>
-      <a @click="openModal" href="javascript:void(0)" class="product-name">{{ product.name }}</a>
+
+    <div
+      class="product-details mt-2 xs:mt-3 sm:mt-4 md:mt-5 lg:mt-6 xl:mt-8 2xl:mt-10 text-center md:text-left"
+    >
+      <p
+        class="category text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-gray-500 font-semibold uppercase tracking-wide"
+      >
+        {{ product.category }}
+      </p>
+      <a
+        @click="openModal"
+        href="javascript:void(0)"
+        class="product-name text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-bold text-gray-800 hover:text-blue-500 transition"
+      >
+        {{ product.name }}
+      </a>
     </div>
 
-    <ProductModal v-if="showModal" :product="product" @close="showModal = false" />
-  </div>
+    <ProductModal
+      v-if="showModal"
+      :product="product"
+      @close="showModal = false"
+      class="z-50 fixed inset-0 flex items-center justify-center bg-black bg-opacity-50"
+    />
+    </div>
+
 </template>
 
 <style scoped>
