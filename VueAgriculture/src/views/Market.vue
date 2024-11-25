@@ -23,8 +23,7 @@ import SotongImage from '@/assets/image/sotong.jpg';
 
 const categories = [
   'Semua', 'Ikan', 'Udang', 'Kepiting', 'Rumput Laut',
-  'Kerang', 'Cumi-Cumi', 'Kategori 3', 'Kategori 4',
-  'Kategori 5', 'Kategori 6', 'Kategori 7', 'Kategori 8', 'Kategori 9'
+  'Kerang', 'Cumi-Cumi'
 ];
 const selectedCategory = ref('Semua');
 
@@ -92,11 +91,13 @@ function closeModal() {
       </div>
     </div>
 
-    <div class="mt-8 grid xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-5 gap-5">
-      <MarketItem v-for="(product, index) in filteredProducts" :key="index" :product="product" @click="openModal(product)" />
+    <div
+      class="mt-8 grid xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-5 gap-5 mb-10">
+      <MarketItem v-for="(product, index) in filteredProducts" :key="index" :product="product"
+        @click="openModal(product)" />
     </div>
   </div>
-  
+
   <ProductModal v-if="showModal" :product="currentProduct" @close="closeModal" />
 </template>
 
