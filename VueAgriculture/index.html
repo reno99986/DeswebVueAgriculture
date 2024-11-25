@@ -1,13 +1,93 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + Vue</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wonderful Tarakan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      plugins: [require('daisyui')],
+      daisyui: {
+        themes: ["light"],
+      },
+    };
+  </script>
+</head>
+<body class="bg-white text-gray-800">
+  <!-- HEADER NAVIGATION -->
+  <header class="navbar bg-white shadow-lg px-4 lg:px-12">
+    <div class="flex-1">
+      <a href="#" class="text-xl font-bold text-blue-500">Wonderful Tarakan</a>
+    </div>
+    <nav class="hidden lg:flex">
+      <ul class="menu menu-horizontal p-0 space-x-4">
+        <li><a href="#" class="hover:text-blue-500">Home</a></li>
+        <li><a href="#" class="hover:text-blue-500">Pengenalan</a></li>
+        <li><a href="#" class="hover:text-blue-500">Hasil Tangkap</a></li>
+        <li><a href="#" class="hover:text-blue-500">Kontak Kami</a></li>
+        <li><a href="#" class="hover:text-blue-500">Tanya Jawab</a></li>
+      </ul>
+    </nav>
+    <div class="dropdown dropdown-end lg:hidden">
+      <label tabindex="0" class="btn btn-ghost">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </label>
+      <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-white rounded-box w-52">
+        <li><a>Home</a></li>
+        <li><a>Pengenalan</a></li>
+        <li><a>Hasil Tangkap</a></li>
+        <li><a>Kontak Kami</a></li>
+        <li><a>Tanya Jawab</a></li>
+      </ul>
+    </div>
+    <div class="ml-4">
+      <a href="#" class="btn btn-outline">ID</a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="py-12 px-4 text-center">
+    <h1 class="text-3xl font-bold text-blue-500">Layanan Kami</h1>
+    <p class="mt-2 text-gray-600">Laporan tentang nelayan yang bekerja sama dengan kami.</p>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
+      <img src="https://via.placeholder.com/150" alt="Image 1" class="rounded-lg shadow-md">
+      <img src="https://via.placeholder.com/150" alt="Image 2" class="rounded-lg shadow-md">
+      <img src="https://via.placeholder.com/150" alt="Image 3" class="rounded-lg shadow-md">
+      <img src="https://via.placeholder.com/150" alt="Image 4" class="rounded-lg shadow-md">
+    </div>
+  </section>
+
+  <!-- FORM SECTION -->
+  <section class="py-12 bg-gray-50">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-2xl font-bold text-blue-500">Request</h2>
+      <p class="mt-2 text-gray-600">This simple form for request</p>
+      <form class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+        <div>
+          <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+          <input type="text" id="name" class="input input-bordered w-full" placeholder="Your Name">
+        </div>
+        <div>
+          <label for="email" class="block text-sm font-medium text-gray-700">E-Mail</label>
+          <input type="email" id="email" class="input input-bordered w-full" placeholder="Your Email">
+        </div>
+        <div class="md:col-span-2">
+          <label for="request" class="block text-sm font-medium text-gray-700">Describe your request</label>
+          <textarea id="request" class="textarea textarea-bordered w-full" placeholder="Your Request"></textarea>
+        </div>
+        <div class="md:col-span-2">
+          <button type="submit" class="btn btn-primary w-full">Send</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-4 bg-white text-center text-sm text-gray-500 border-t">
+    <p>Copyright © 2024 - All right reserved</p>
+  </footer>
+</body>
 </html>
