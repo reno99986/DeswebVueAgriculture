@@ -28,7 +28,7 @@ const faqData = [
     <div
       v-for="(item, index) in faqData"
       :key="index"
-      class="collapse collapse-arrow bg-base-200"
+      class="collapse collapse-arrow bg-base-200 my-3"
     >
       <input type="checkbox" class="peer" />
       <div class="collapse-title text-xl font-medium peer-checked:bg-blue-500 peer-checked:text-white">
