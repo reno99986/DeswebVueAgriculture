@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "serve": "node server.js"
+  },
   "dependencies": {
     "daisyui": "^4.12.14"
   }
