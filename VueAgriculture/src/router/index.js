@@ -30,7 +30,7 @@ const router = createRouter({
     {
       path: "/services",
       name: "layanan kami",
-      components : () => import("../views/OurServices.vue")
+      component: () => import("../views/OurServices.vue"),
     },
   ],
   scrollBehavior(to, from, savedPosition) {
