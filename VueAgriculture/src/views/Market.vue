@@ -73,8 +73,8 @@ function closeModal() {
 
 <template>
   <!-- Header Section -->
-  <div class="text-center bg-[#377CFB] text-white py-10 px-4">
-    <h1 class="text-4xl font-bold">Hasil Tangkapan</h1>
+  <div class="text-center bg-secondary text-white py-10 px-4">
+    <h1 class="text-4xl font-bold ">Hasil Tangkapan</h1>
     <p class="mt-2 max-w-2xl mx-auto">
       Rasakan Kesegaran Sejati dari Laut! Dapatkan Hasil Laut Berkualitas Tinggi dengan Harga Terjangkau.
     </p>
@@ -85,16 +85,18 @@ function closeModal() {
     <div class="relative mt-8 px-4">
       <div class="flex space-x-4 overflow-x-auto px-4 categories-container">
         <button v-for="category in categories" :key="category" @click="filterCategory(category)"
-          :class="['py-1 px-6 rounded-full whitespace-nowrap', selectedCategory.value === category ? 'bg-[#377CFB] text-white' : 'bg-gray-200']">
+          :class="['py-1 px-6 rounded-full whitespace-nowrap', selectedCategory.value === category ? 'bg-[#377CFB] text-white' : 'bg-base-300']">
           {{ category }}
         </button>
       </div>
     </div>
 
-    <div
-      class="mt-8 grid xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-5 gap-5 mb-10">
-      <MarketItem v-for="(product, index) in filteredProducts" :key="index" :product="product"
-        @click="openModal(product)" />
+    <div class="h-auto">
+      <div
+        class="mt-8 grid xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-5 gap-5 mb-10 min-h-[530px] ">
+        <MarketItem v-for="(product, index) in filteredProducts" :key="index" :product="product"
+          @click="openModal(product)" />
+      </div>
     </div>
   </div>
 
