@@ -56,7 +56,7 @@ const faqData = [
 
 <template>
   <main
-    class="sm:flex-col gap-10 2xl:gap-40 xl:gap-40 2xl:px-56 xl:px-48 px-12 xs:px-4 py-4 bg-neutral-content place-content-between border border-b-2 border-base-200"
+    class="sm:flex-col gap-10 2xl:gap-40 xl:gap-40 2xl:px-56 xl:px-48 px-12 xs:px-4 py-4 emerald:bg-neutral-content place-content-between border border-b-2 border-base-200"
   >
     <div
       v-for="(item, index) in faqData"

@@ -3,7 +3,7 @@ import TestimonyCard from "/src/components/UI/TestimonyCard.vue";
 </script>
 
 <template>
-  <main class="py-12 bg-neutral-content border border-b-2 border-base-200">
+  <main class="py-12 emerald:bg-neutral-content border border-b-2 border-base-200">
     <div class="text-center mb-12">
       <h2
         class="text-2xl 2xl:text-4xl xl:text-3xl lg:text-3xl text-secondary font-bold mb-4"

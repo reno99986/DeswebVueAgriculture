@@ -2,7 +2,7 @@
 
 <template>
   <main
-    class="flex xs:flex-col sm:flex-col flex-row-reverse gap-4 2xl:gap-20 xl:gap-20 2xl:px-16 xl:px-16 px-12 xs:px-4 py-4 bg-neutral-content place-content-between border border-b-2 border-base-200"
+    class="flex xs:flex-col sm:flex-col flex-row-reverse gap-4 2xl:gap-20 xl:gap-20 2xl:px-16 xl:px-16 px-12 xs:px-4 py-4 emerald:bg-neutral-content place-content-between border border-b-2 border-base-200"
   >
     <img
       src="/src/assets/image/foto_nelayan.jpg"
