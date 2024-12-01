@@ -10,7 +10,7 @@ const tabActive = ref(1);
       @change="tabActive = 1" aria-label="Pengajuan Nelayan" />
     <div role="tabpanel" class="tab-content " v-if="tabActive === 1">
       <h3 class="text-2xl font-semibold mb-4 mt-8">Form Pengajuan Nelayan</h3>
-      <form class="space-y-4">
+      <form class="space-y-4 min-h-[750px]">
 
         <div>
           <label for="product-name" class="block text-sm font-medium ">Jenis Produk</label>
@@ -30,7 +30,7 @@ const tabActive = ref(1);
           <label for="product-description" class="block text-sm font-medium ">Deskripsi Produk</label>
           <textarea id="product-description" name="product-description"
             class="mt-1 block w-full px-4 py-2 border border-gray-300  rounded-md shadow-sm focus:ring-secondary focus:border-secondary"
-            rows="10" required></textarea>
+            rows="12" required></textarea>
         </div>
 
         <div>
@@ -60,7 +60,7 @@ const tabActive = ref(1);
       aria-label="Melaporkan Produk" />
     <div role="tabpanel" class="tab-content" v-if="tabActive === 2">
       <h3 class="text-2xl font-semibold mb-4 mt-8">Form Melaporkan Produk</h3>
-      <form class="space-y-4">
+      <form class="space-y-4 min-h-[750px]">
 
         <div>
           <label for="report-description" class="block text-sm font-medium ">Deskripsi Laporan</label>
