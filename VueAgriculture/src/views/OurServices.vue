@@ -1,14 +1,11 @@
 <script setup>
-import { ref } from 'vue';
 
-const tabActive = ref(1);
 </script>
 
 <template>
   <div role="tablist" class="tabs tabs-bordered tabs-md 2xl:px-16 xl:px-16 px-12 xs:px-4 py-4">
-    <input type="radio" name="my_tabs_1" role="tab" class="tab w-full" :checked="tabActive === 1"
-      @change="tabActive = 1" aria-label="Pengajuan Nelayan" />
-    <div role="tabpanel" class="tab-content " v-if="tabActive === 1">
+    <input type="radio" name="my_tabs_1" role="tab" class="tab" checked="checked" aria-label="Pengajuan Nelayan" />
+    <div role="tabpanel" class="tab-content ">
       <h3 class="text-2xl font-semibold mb-4 mt-8">Form Pengajuan Nelayan</h3>
       <form class="space-y-4 min-h-[750px]">
 
@@ -56,9 +53,8 @@ const tabActive = ref(1);
       </form>
     </div>
 
-    <input type="radio" name="my_tabs_1" role="tab" class="tab" :checked="tabActive === 2" @change="tabActive = 2"
-      aria-label="Melaporkan Produk" />
-    <div role="tabpanel" class="tab-content" v-if="tabActive === 2">
+    <input type="radio" name="my_tabs_1" role="tab" class="tab" aria-label="Melaporkan Produk" />
+    <div role="tabpanel" class="tab-content">
       <h3 class="text-2xl font-semibold mb-4 mt-8">Form Melaporkan Produk</h3>
       <form class="space-y-4 min-h-[750px]">
 

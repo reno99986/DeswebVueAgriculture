@@ -75,7 +75,7 @@ const toggleMenu = () => {
 
     <!-- Dropdown Menu (Mobile) -->
     <div v-if="isMenuOpen"
-      class="2xl:hidden xl:hidden lg:hidden absolute top-16 right-0 bg-base-100 p-4 shadow-lg rounded-lg w-screen flex flex-col ">
+      class="2xl:hidden xl:hidden lg:hidden absolute top-16 right-0 bg-base-100 p-4 shadow-lg rounded-lg w-screen flex flex-col z-50 ">
       <RouterLink to="/" class="block py-2">Home</RouterLink>
       <RouterLink to="/about" class="block py-2">Pengenalan</RouterLink>
       <RouterLink to="/market" class="block py-2">Hasil Tangkapan</RouterLink>
