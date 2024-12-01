@@ -8,8 +8,12 @@ const props = defineProps({
 
 const showModal = ref(false);
 
-function openModal() {
-  showModal.value = true;
+// function openModal() {
+//   showModal.value = true;
+// }
+
+function closeModal() {
+  showModal.value = false;
 }
 </script>
 
@@ -42,14 +46,14 @@ function openModal() {
       </a>
     </div>
 
+    <!-- Modal Component -->
     <ProductModal
       v-if="showModal"
       :product="product"
-      @close="showModal = false"
+      @close="closeModal"
       class="z-50 fixed inset-0 flex items-center justify-center bg-black bg-opacity-50"
     />
-    </div>
-
+  </div>
 </template>
 
 <style scoped>

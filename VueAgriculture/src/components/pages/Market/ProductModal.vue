@@ -4,23 +4,31 @@ const props = defineProps({
 });
 
 const emit = defineEmits(['close']);
+
+function closeModal(event) {
+  event.stopPropagation();  // Prevent event bubbling
+  emit('close');  // Emit the 'close' event to close the modal
+}
+
 </script>
 
 <template>
   <div 
     class="modal-overlay fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4"
-    @click.self="$emit('close')"
+    @click="closeModal" 
   >
     <div 
       class="modal-content bg-white rounded-lg shadow-lg p-6 relative xs:w-full sm:w-3/4 md:w-2/3 lg:w-1/2 xl:w-1/3 2xl:w-1/4"
+      @click.stop 
     >
       <button 
         class="close-btn absolute top-2 right-2 text-gray-600 hover:text-gray-900"
-        @click="$emit('close')"
+        @click="closeModal"
       >
         ✕
       </button>
 
+      <!-- Modal Content Here -->
       <div 
         class="modal-image-container grid xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 2xl:grid-rows-1 gap-4 p-4"
       >
