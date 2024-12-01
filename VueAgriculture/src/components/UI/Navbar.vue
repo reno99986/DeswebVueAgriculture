@@ -16,41 +16,41 @@ import { RouterLink } from "vue-router";
           </p>
         </div>
       </RouterLink>
+      <button
+      class="btn btn-ghost text-base lg:text-sm text-base-content font-normal p-0 md:hidden sm:hidden xs:hidden"
+      >
       <RouterLink to="/">
-        <button
-          class="btn btn-ghost text-base lg:text-sm text-base-content font-normal p-0 md:hidden sm:hidden xs:hidden"
-        >
           Home
+        </RouterLink>
         </button>
-      </RouterLink>
-      <RouterLink to="/about">
         <button
-          class="btn btn-ghost text-base lg:text-sm text-base-content font-normal p-0 md:hidden sm:hidden xs:hidden"
+        class="btn btn-ghost text-base lg:text-sm text-base-content font-normal p-0 md:hidden sm:hidden xs:hidden"
         >
+        <RouterLink to="/about">
           Pengenalan
+        </RouterLink>
         </button>
-      </RouterLink>
-      <RouterLink to="/market">
         <button
-          class="btn btn-ghost text-base lg:text-sm text-base-content font-normal p-0 md:hidden sm:hidden xs:hidden"
+        class="btn btn-ghost text-base lg:text-sm text-base-content font-normal p-0 md:hidden sm:hidden xs:hidden"
         >
+        <RouterLink to="/market">
           Hasil Tangkapan
+        </RouterLink>
         </button>
-      </RouterLink>
-      <RouterLink to="/FAQ">
         <button
-          class="btn btn-ghost text-base lg:text-sm text-base-content font-normal p-0 md:hidden sm:hidden xs:hidden"
+        class="btn btn-ghost text-base lg:text-sm text-base-content font-normal p-0 md:hidden sm:hidden xs:hidden"
         >
+        <RouterLink to="/FAQ">
           Tanya Jawab
+        </RouterLink>
         </button>
-      </RouterLink>
-      <RouterLink to="/services">
         <button
-          class="btn btn-ghost text-base lg:text-sm text-base-content font-normal p-0 md:hidden sm:hidden xs:hidden"
+        class="btn btn-ghost text-base lg:text-sm text-base-content font-normal p-0 md:hidden sm:hidden xs:hidden"
         >
+        <RouterLink to="/services">
           Layanan Kami
+        </RouterLink>
         </button>
-      </RouterLink>
     </div>
 
     <div class="dropdown dropdown-end md:hidden sm:hidden xs:hidden">
