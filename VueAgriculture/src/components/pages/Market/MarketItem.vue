@@ -7,10 +7,6 @@ const props = defineProps({
 });
 
 const showModal = ref(false);
-
-function openModal() {
-  showModal.value = true;
-}
 </script>
 
 <template>
