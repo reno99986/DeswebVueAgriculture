@@ -14,6 +14,7 @@ import { RouterLink } from 'vue-router';
           </p>
         </div>
       </RouterLink>
+<<<<<<< Updated upstream
       <RouterLink to="/">
         <button
           class="btn btn-ghost text-base lg:text-sm text-base-content font-normal p-0 md:hidden sm:hidden xs:hidden">
@@ -44,6 +45,32 @@ import { RouterLink } from 'vue-router';
           Layanan Kami
         </button>
       </RouterLink>
+=======
+      <button
+        class="btn btn-ghost text-base lg:text-sm text-base-content font-normal p-0 md:hidden sm:hidden xs:hidden">
+        <RouterLink to="/">Home</RouterLink>
+      </button>
+      <button
+        class="btn btn-ghost text-base lg:text-sm text-base-content font-normal p-0 md:hidden sm:hidden xs:hidden">
+        <RouterLink to="/about">Pengenalan</RouterLink>
+      </button>
+      <button
+        class="btn btn-ghost text-base lg:text-sm text-base-content font-normal p-0 md:hidden sm:hidden xs:hidden">
+        <RouterLink to="/market">Hasil Tangkapan</RouterLink>
+      </button>
+      <button
+        class="btn btn-ghost text-base lg:text-sm text-base-content font-normal p-0 md:hidden sm:hidden xs:hidden">
+        <RouterLink to="/FAQ">Tanya Jawab</RouterLink>
+      </button>
+      <button
+        class="btn btn-ghost text-base lg:text-sm text-base-content font-normal p-0 md:hidden sm:hidden xs:hidden">
+        <RouterLink to="/services">Layanan Kami</RouterLink>
+      </button>
+      <button
+        class="btn btn-ghost text-base lg:text-sm text-base-content font-normal p-0 md:hidden sm:hidden xs:hidden">
+        <RouterLink to="/services">Our Task</RouterLink>
+      </button>
+>>>>>>> Stashed changes
     </div>
 
     <div class="dropdown dropdown-end md:hidden sm:hidden xs:hidden">
