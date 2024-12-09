@@ -32,6 +32,11 @@ const router = createRouter({
       name: "layanan kami",
       component: () => import("../views/OurServices.vue"),
     },
+    {
+      path: "/Task",
+      name: "Our Task",
+      component: () => import("../views/Task.vue"),
+    },
   ],
   scrollBehavior(to, from, savedPosition) {
     // always scroll to top

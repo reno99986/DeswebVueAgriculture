@@ -43,6 +43,10 @@ const toggleMenu = () => {
         class="btn btn-ghost text-base lg:text-sm text-base-content font-normal p-0 md:hidden sm:hidden xs:hidden">
         <RouterLink to="/services">Layanan Kami</RouterLink>
       </button>
+      <button
+        class="btn btn-ghost text-base lg:text-sm text-base-content font-normal p-0 md:hidden sm:hidden xs:hidden">
+        <RouterLink to="/Task">Our Task</RouterLink>
+      </button>
     </div>
 
     <div class="dropdown dropdown-end md:hidden sm:hidden xs:hidden">
