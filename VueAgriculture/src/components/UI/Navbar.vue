@@ -43,6 +43,10 @@ const toggleMenu = () => {
         class="btn btn-ghost text-base lg:text-sm text-base-content font-normal p-0 md:hidden sm:hidden xs:hidden">
         <RouterLink to="/services">Layanan Kami</RouterLink>
       </button>
+      <button
+        class="btn btn-ghost text-base lg:text-sm text-base-content font-normal p-0 md:hidden sm:hidden xs:hidden">
+        <RouterLink to="/profile">Profile</RouterLink>
+      </button>
     </div>
 
     <div class="dropdown dropdown-end md:hidden sm:hidden xs:hidden">
@@ -81,6 +85,7 @@ const toggleMenu = () => {
       <RouterLink to="/market" class="block py-2">Hasil Tangkapan</RouterLink>
       <RouterLink to="/FAQ" class="block py-2">Tanya Jawab</RouterLink>
       <RouterLink to="/services" class="block py-2">Layanan Kami</RouterLink>
+      <RouterLink to="/profile" class="block py-2">Profile</RouterLink>
       <label class="swap swap-rotate">
         <!-- this hidden checkbox controls the state -->
         <input type="checkbox" class="theme-controller" value="night" />
